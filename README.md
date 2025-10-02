@@ -1,4 +1,4 @@
-# Automation Assignment - Playwright TypeScript Framework
+# Automation Eexercise - Playwright TypeScript Framework
 
 A comprehensive end-to-end testing framework built with Playwright and TypeScript, featuring multi-environment support, cross-browser testing, and robust CI/CD integration.
 

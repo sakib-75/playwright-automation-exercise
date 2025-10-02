@@ -4,7 +4,7 @@ import { logger } from '../utils/logger';
 
 
 test.describe('Add to Cart Tests - Test Case 2', () => {
-  test('Verify user can search for products successfully (existent product)', async ({ homePage, productDetailsPage, cartPage }) => {
+  test('Verify that product is displayed in cart page with exact quantity', async ({ homePage, productDetailsPage, cartPage }) => {
     await homePage.navigateToHomePage();
     expect(await homePage.isHomePageVisible()).toBeTruthy();
     logger.info('Navigated to home page');

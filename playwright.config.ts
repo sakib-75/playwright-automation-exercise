@@ -87,8 +87,8 @@ export default defineConfig({
   testMatch: '**/*.spec.ts',
   forbidOnly: !!process.env.CI,
   fullyParallel: process.env.PARALLEL ? process.env.PARALLEL === 'true' : false,
-  retries: process.env.CI === 'true' ? Number(process.env.RETRIES ?? 2) : 0,
-  workers: Number(process.env.WORKERS ?? 1),
+  retries: process.env.CI === 'true' ? 2 : Number(process.env.RETRIES ?? 0),
+  workers: process.env.CI ==='true' ? 3 : Number(process.env.WORKERS ?? 1),
   timeout: Number(process.env.TIMEOUT ?? 30000),
   reporter: 'html',
   use: {
