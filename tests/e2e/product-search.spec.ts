@@ -1,6 +1,6 @@
 import { test } from '../fixtures/base-test';
 import { expect } from '@playwright/test';
-import {logger } from '../utils/logger';
+import { logger } from '../utils/logger';
 
 
 test.describe('Product Search Tests - Test Case 1', () => {
